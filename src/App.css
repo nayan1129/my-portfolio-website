@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  font-family: "Roboto ", sans-serif;
+}
+.logo {
+  width: 5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item a {
+  color: white;
+  margin-left: 18px;
+  font-size: 20px;
+}
+.nav-item .active {
+  color: black;
+  background-color: orange;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item a:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 12px;
+}
+
+/* navbar-toggler */
+.navbar-toggler {
+  background-color: white;
+} 
+
+/* Header  */
+.header {
+  position: relative;
+  background: url(./components/images/pexels-lukas-574071.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  opacity: 0.99;
+}
+@media (max-width: 460px) {
+  .header {
+    height: 72vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-info h1 {
+  color: rgb(255, 254, 254);
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 7px rgb(0, 0, 0);
+  font-family: system-ui;
+}
+
+.main-info h3 {
+  font-family: none;
+  /* text-shadow: 3px 3px 7px rgb(255, 255, 255); */
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+@media (max-width: 763px) {
+  .main-info h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 661px) {
+  .main-info h1 {
+    font-size: 2rem;
+  }
+  .main-info h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* About Me  */
+.container {
+  padding: 3px;
+  margin-top: 46px;
+}
+.container .h1 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 36px;
 }
-
-.App-link {
-  color: #61dafb;
+.about-info {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-info p {
+  font-size: 20px;
+  margin-left: 3px;
+  margin-right: 27px;
+}
+.container .line {
+  padding: 2px;
+  background-color: orange;
+}
+@media (max-width: 1013px) {
+  .about-info {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* My Skills  */
+.about-skills {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.skill-1 {
+  width: 160px;
+  height: 160px;
+  /* background-color: brown; */
+  margin: 17px;
+  position: relative;
+}
+.outer-box {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px rgba(0, 0, 0, 0.05);
+}
+#number {
+  font-weight: 600;
+  color: #555;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+circle {
+  fill: none;
+  stroke: orange;
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+}
+/* animation  */
+.anim-1 {
+  animation: animat-1 3s linear forwards;
+}
+.anim-2 {
+  animation: animat-2 3s linear forwards;
+}
+.anim-3 {
+  animation: animat-3 3s linear forwards;
+}
+.anim-4 {
+  animation: animat-4 3s linear forwards;
+}
+
+@keyframes animat-1 {
+  100% {
+    stroke-dashoffset: 94;
+  }
+}
+@keyframes animat-2 {
+  100% {
+    stroke-dashoffset: 188;
+  }
+}
+@keyframes animat-3 {
+  100% {
+    stroke-dashoffset: 141;
+  }
+}
+@keyframes animat-4 {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+.skill-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Projects  */
+
+.about-projects {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.card-img-top {
+  width: 18rem;
+}
+.card-link {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.card-link:hover {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
+
+/* CONTACT  */
+
+.about-contact {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 41%;
+  margin: 12px 0px;
+}
+.contact-number-mail a {
+  color: #f07e4b;
+  text-decoration: none;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59%;
+  flex-direction: column;
+}
+.form input {
+  margin: 5px 0px;
+  border-radius: 9px;
+  padding: 2px;
+  border: 1px solid black;
+}
+.form .btn {
+  background-color: orange;
+  width: 201px;
+  margin: 5px 0px;
+  font-size: 17px;
+}
+.form .btn:hover {
+  color: #fff;
+}
+@media (max-width: 655px) {
+  .contact-section {
+    flex-direction: column;
   }
 }
