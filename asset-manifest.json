@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-website/static/css/main.5512d12c.css",
+    "main.js": "/my-portfolio-website/static/js/main.5d97d539.js",
+    "static/media/calculator.jpg": "/my-portfolio-website/static/media/calculator.bd8b3ca4b4a7a8604045.jpg",
+    "static/media/weather.jpg": "/my-portfolio-website/static/media/weather.8a1d886a2099d58281e4.jpg",
+    "static/media/pexels-lukas-574071.jpg": "/my-portfolio-website/static/media/pexels-lukas-574071.f0dc87ff1f58bda9abef.jpg",
+    "static/media/todo.jpg": "/my-portfolio-website/static/media/todo.3787ee2ee8cd52501a98.jpg",
+    "static/media/ecommerce.jpg": "/my-portfolio-website/static/media/ecommerce.4faa0e9a3c666652316f.jpg",
+    "static/media/Validationform.jpg": "/my-portfolio-website/static/media/Validationform.0797f106a697dc6315a6.jpg",
+    "static/media/about-image.jpg": "/my-portfolio-website/static/media/about-image.8c34f991e5e570ff3a10.jpg",
+    "static/media/quiz.jpg": "/my-portfolio-website/static/media/quiz.8de0c70097d51b8a0343.jpg",
+    "static/media/keepnotes.jpg": "/my-portfolio-website/static/media/keepnotes.3b9f398bf4fe23dccb32.jpg",
+    "static/media/nayan-logo.png": "/my-portfolio-website/static/media/nayan-logo.c0a6c752e45afc925005.png",
+    "index.html": "/my-portfolio-website/index.html",
+    "main.5512d12c.css.map": "/my-portfolio-website/static/css/main.5512d12c.css.map",
+    "main.5d97d539.js.map": "/my-portfolio-website/static/js/main.5d97d539.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5512d12c.css",
+    "static/js/main.5d97d539.js"
+  ]
+}
